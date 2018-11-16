@@ -1,0 +1,21 @@
+
+
+First Run:
+
+spark-submit --class scd.YelpUserScdFirstRun --master yarn --conf spark.ui.port=12985 --num-executors 4 
+             --executor-memory 1GB target/scala-2.11/slowly-changing-dimention-2_2.11-1.0.jar "20180731"
+             
+Monthly Run:
+
+Run for - 20180831
+spark-submit --class scd.YelpUserScdMonthlyRun --master yarn --conf spark.ui.port=12990 --num-executors 4 
+             --executor-memory 1GB target/scala-2.11/slowly-changing-dimention-2_2.11-1.0.jar "20180831" 
+
+Run for - 20180930
+spark-submit --class scd.YelpUserScdMonthlyRun --master yarn --conf spark.ui.port=12990 --num-executors 4 
+             --executor-memory 1GB target/scala-2.11/slowly-changing-dimention-2_2.11-1.0.jar "20180930" 
+
+Run for - 20181031
+spark-submit --class scd.YelpUserScdMonthlyRun --master yarn --conf spark.ui.port=12990 --num-executors 4 
+             --executor-memory 1GB target/scala-2.11/slowly-changing-dimention-2_2.11-1.0.jar "20181031" 
+             
