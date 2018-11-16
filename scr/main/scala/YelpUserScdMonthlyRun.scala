@@ -15,7 +15,7 @@ import java.text.SimpleDateFormat
 object YelpUserScdMonthlyRun {
   def main(args: Array[String]): Unit = {
 
-    println("SCD First run started")
+    println("SCD monthly run started")
 
     val proc_dt = args(0)
 
