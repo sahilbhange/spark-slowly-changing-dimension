@@ -1,0 +1,19 @@
+
+First Run:
+
+spark-submit --master yarn --conf spark.ui.port=12789 --num-executors 2 --executor-memory 1GB  
+             --packages com.databricks:spark-csv_2.10:1.4.0 /home/sahilbhange/hiveql/src/pyspark/scd_first_run_pyspark.py '20180731'
+
+Monthly Run:
+
+Monthly run - 20180831
+#spark-submit --master yarn --conf spark.ui.port=12789 --num-executors 4 --executor-memory 2GB  /home/sahilbhange/hiveql/src/pyspark/scd_monthly_
+run_pyspark.py '20180831'
+
+Monthly run - 20180930
+#spark-submit --master yarn --conf spark.ui.port=12789 --num-executors 4 --executor-memory 2GB  /home/sahilbhange/hiveql/src/pyspark/scd_monthly_
+run_pyspark.py '20180930'
+
+Monthly run - 20181031
+#spark-submit --master yarn --conf spark.ui.port=12789 --num-executors 4 --executor-memory 2GB  /home/sahilbhange/hiveql/src/pyspark/scd_monthly_
+run_pyspark.py '20181031'
