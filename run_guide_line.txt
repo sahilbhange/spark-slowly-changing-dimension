@@ -1,4 +1,27 @@
+# Create sbt file 'build.sbt' with below parameters
 
+name := "slowly changing dimention 2"
+
+version := "1.0"
+
+scalaVersion := "2.11.8"
+
+libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.3.0"
+
+
+# Your directory layout should look like this
+$ find .
+.
+./build.sbt
+./src
+./src/main
+./src/main/scala
+./src/main/scala/YelpUserScdFirstRun.scala
+
+# Package a jar containing your application
+$ sbt package
+...
+[info] Packaging {..}/{..}/target/scala-2.11/slowly-changing-dimention-2_2.11-1.0.jar
 
 First Run:
 
